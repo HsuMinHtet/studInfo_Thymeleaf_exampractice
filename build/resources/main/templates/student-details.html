@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+
+<h1 th:text="${student.registerNumber()}">Register Number</h1>
+<p th:text="${student.name}">Name</p>
+<p th:text="${student.email}">Email</p>
+<a th:href="@{/api/v1/students}">Back to Students</a>
+</body>
+</html>
